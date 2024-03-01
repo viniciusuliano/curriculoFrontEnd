@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #f3f3f3;
+    color: #82a2fb;
+    gap: 20px;
+}
+input[type='checkbox']{
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    background-color: #82a2fb;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+}
+input:checked[type='checkbox']{
+    background-color: black;
+}
+input[type='checkbox']:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #fffbf4;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+    transition: .5s;
+    top: 0;
+    left: 0;
+}
+input:checked[type="checkbox"]:before{
+    left: 40px;
+
+}
+body{
+    background-color: #c8e8e8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+#foto-minha{
+    width: 300px;
+    border-radius: 15px;
+    transition: 1s;
+}
+#foto-minha:hover{
+    transform: scale(1.1);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobremim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 30px;
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+#sobremim,p{
+    transition: 1.2s ;
+}
+#sobremim,p:hover{
+    transform: scale(1.1);
+}
+#informações-2{
+    padding: 30px;
+}
+#javascript,
+#html,
+#css{
+    width: 100px;
+    padding: 10px;
+    transition: 1.2s;
+
+}
+
+
+#javascript:hover,
+#html:hover,
+#css:hover{
+transform: scale(1.2);
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f3f3f3;
+    height: 60px;
+}
+
+a{
+     text-decoration: none;
+    color:#82a2fb;
+}
+
+#linkedin{
+    width: 40px;
+}
+
+#icon-dev{
+    width: 40px;
+}
